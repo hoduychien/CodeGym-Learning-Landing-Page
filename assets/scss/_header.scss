@@ -1,0 +1,25 @@
+.header{
+    padding: 20px 0;
+    &__main{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        &--logo{
+            display:flex;
+            align-items: center;
+            gap: 5px;
+            span{
+                font-weight: 700;
+            }
+        }
+        &--icon{
+            background: $primary;
+            padding: 10px;
+            border-radius: 8px;
+            color: $white;
+        }
+        &--toggle{
+            display: none;
+        }
+    }
+}

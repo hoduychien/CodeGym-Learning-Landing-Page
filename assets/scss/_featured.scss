@@ -1,0 +1,197 @@
+.featured {
+    padding: 50px;
+
+    &__desc {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        &--item {
+            background-color: $white;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+
+        &--type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+
+            span {
+                background-color: $body;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+
+        &--desc {
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $gray;
+        }
+
+        &--number {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+
+            padding: 0 10px;
+            color: $gray;
+
+            &>div {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        &--vote {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            padding: 0 5px;
+            gap: 20px;
+        }
+
+        &--star {
+            i {
+                color: $primary;
+            }
+
+            span {
+                padding: 5px;
+                color: gray;
+                font-weight: 400;
+            }
+        }
+
+        &--btn {
+            padding: 10px;
+            background: $body;
+            border-radius: 100rem;
+            color: $text-color;
+            font-size: 15px;
+            transition: all 0.2s linear;
+
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+
+        &--content {
+            p {
+                font-size: 14px;
+                color: $gray;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+
+        &--heading {
+            line-height: 120%;
+        }
+
+        &--statistics {
+            display: flex;
+            gap: 20px;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                color: $gray;
+            }
+        }
+
+        &--desc {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &-statistics {
+        &--top{
+            display: flex;
+            align-items: center;
+            span{
+                max-width: 120px;
+                font-size: 14px;
+            }
+        }
+
+        p{
+            font-size: 12px;
+            color: $gray;
+        }
+
+
+
+        i {
+            width: 50px;
+            height: 50px;
+            color: $white;
+            border-radius: 10px;
+            margin: 0 10px 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:nth-child(1) i {
+            background: $yellow;
+        }
+
+        &:nth-child(2) i {
+            background: $purple;
+        }
+
+        &:nth-child(3) i {
+            background: $primary;
+        }
+
+    }
+
+
+
+}

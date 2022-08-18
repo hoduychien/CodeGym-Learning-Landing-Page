@@ -1,0 +1,98 @@
+.hero{
+    margin-top: 50px;
+    &-main{
+        &__head{
+            display:flex;
+            gap: 50px;
+            font-size: 15px;
+            &--title{
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 150%;
+            }
+
+            &--desc{
+                display:flex;
+                flex-direction:column;
+                gap: 20px;
+            }
+            &--desc> .btn{
+                max-width: 200px;
+                font-size: 13px;
+            } 
+            &--tag{
+                span{
+                    background-color: $white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    color: $primary;
+                }
+            }
+            &--text{
+                line-height: 150%;
+                color: gray;
+                font-weight: 400;
+            }
+        }
+
+        &__content{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            &--image{
+                width: 800px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 450px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 80px;
+                    height: 80px;
+                    background: rgba(255, 255, 255, 0.6);
+                    backdrop-filter: blur(10px);
+                    border-radius: 100rem;
+                    font-size: 30px;
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            &--statistics{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                flex-direction:column;
+                gap:  20px;
+            }
+            &--item{
+                text-align: center;
+                max-width: 150px;
+
+                h2{
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: $primary;
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $gray;
+                }
+            }
+        }
+
+    }
+}

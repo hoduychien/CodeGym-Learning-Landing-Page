@@ -1,0 +1,44 @@
+.book {
+    padding: 50px 0;
+
+    &__desc {
+        margin-bottom: 50px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__slide {
+        &--content {
+            margin-bottom: 50px;
+        }
+
+        &--item {
+            width: 300px;
+            height: 350px;
+            padding: 14px;
+            background-color: $white;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 25px;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: $primary;
+}
+
+.swiper-pagination-bullet {
+    background-color: $primary;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}

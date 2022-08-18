@@ -1,0 +1,47 @@
+.footer{
+    &__main{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $gray;
+    }
+
+    &__column{
+        max-width: 300px;
+        display:flex;
+        flex-direction:column;
+        gap: 15px;
+
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            color: $gray;
+        }
+        &--social{
+            display:flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            i:nth-child(2){
+                color: $primary;
+            }
+        }
+
+        h3{
+            font-size: 25px;
+        }
+        &>div{
+            font-size: 16px;
+            color: $gray;
+            font-weight: 400;
+        }
+    }
+
+    &__copy-right{
+        font-size: 14px;
+        font-weight: 400;
+        color: $gray;
+        text-align: center;
+    }
+}
